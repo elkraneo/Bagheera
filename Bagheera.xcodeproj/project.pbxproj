@@ -10,12 +10,14 @@
 		AE5D82721CCB6765006C5171 /* Bagheera.h in Headers */ = {isa = PBXBuildFile; fileRef = AE5D82711CCB6765006C5171 /* Bagheera.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE5D82791CCB6765006C5171 /* Bagheera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D826E1CCB6765006C5171 /* Bagheera.framework */; };
 		AE5D827E1CCB6765006C5171 /* BagheeraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D827D1CCB6765006C5171 /* BagheeraTests.swift */; };
-		AE5D828B1CCB69BB006C5171 /* BGHTMDbClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D82881CCB69BB006C5171 /* BGHTMDbClient.swift */; };
+		AE5D828B1CCB69BB006C5171 /* BagheeraTMDb.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D82881CCB69BB006C5171 /* BagheeraTMDb.swift */; };
 		AE5D828C1CCB69BB006C5171 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D82891CCB69BB006C5171 /* Movie.swift */; };
 		AE5D828D1CCB69BB006C5171 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D828A1CCB69BB006C5171 /* MovieList.swift */; };
 		AE5D82911CCB7145006C5171 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D828E1CCB7145006C5171 /* Alamofire.framework */; };
 		AE5D82921CCB7145006C5171 /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D828F1CCB7145006C5171 /* Freddy.framework */; };
 		AE5D82931CCB7145006C5171 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D82901CCB7145006C5171 /* RxSwift.framework */; };
+		AEB5B8741CCBBA7E00CD9550 /* Bagheera.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5B8731CCBBA7E00CD9550 /* Bagheera.swift */; };
+		AEB5B8761CCBBBA000CD9550 /* BagheeraTraktTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5B8751CCBBBA000CD9550 /* BagheeraTraktTV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +37,14 @@
 		AE5D82781CCB6765006C5171 /* BagheeraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BagheeraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5D827D1CCB6765006C5171 /* BagheeraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagheeraTests.swift; sourceTree = "<group>"; };
 		AE5D827F1CCB6765006C5171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE5D82881CCB69BB006C5171 /* BGHTMDbClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGHTMDbClient.swift; sourceTree = "<group>"; };
+		AE5D82881CCB69BB006C5171 /* BagheeraTMDb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BagheeraTMDb.swift; sourceTree = "<group>"; };
 		AE5D82891CCB69BB006C5171 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		AE5D828A1CCB69BB006C5171 /* MovieList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 		AE5D828E1CCB7145006C5171 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		AE5D828F1CCB7145006C5171 /* Freddy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Freddy.framework; path = Carthage/Build/iOS/Freddy.framework; sourceTree = "<group>"; };
 		AE5D82901CCB7145006C5171 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		AEB5B8731CCBBA7E00CD9550 /* Bagheera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bagheera.swift; sourceTree = "<group>"; };
+		AEB5B8751CCBBBA000CD9550 /* BagheeraTraktTV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BagheeraTraktTV.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +72,10 @@
 		AE5D82641CCB6765006C5171 = {
 			isa = PBXGroup;
 			children = (
-				AE5D828E1CCB7145006C5171 /* Alamofire.framework */,
-				AE5D828F1CCB7145006C5171 /* Freddy.framework */,
-				AE5D82901CCB7145006C5171 /* RxSwift.framework */,
 				AE5D82701CCB6765006C5171 /* Bagheera */,
 				AE5D827C1CCB6765006C5171 /* BagheeraTests */,
 				AE5D826F1CCB6765006C5171 /* Products */,
+				AEB5B8721CCBBA6400CD9550 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,7 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				AE5D82711CCB6765006C5171 /* Bagheera.h */,
-				AE5D82881CCB69BB006C5171 /* BGHTMDbClient.swift */,
+				AEB5B8731CCBBA7E00CD9550 /* Bagheera.swift */,
+				AE5D82881CCB69BB006C5171 /* BagheeraTMDb.swift */,
+				AEB5B8751CCBBBA000CD9550 /* BagheeraTraktTV.swift */,
 				AE5D82731CCB6765006C5171 /* Info.plist */,
 				AE5D82891CCB69BB006C5171 /* Movie.swift */,
 				AE5D828A1CCB69BB006C5171 /* MovieList.swift */,
@@ -107,6 +111,16 @@
 			path = BagheeraTests;
 			sourceTree = "<group>";
 		};
+		AEB5B8721CCBBA6400CD9550 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE5D828E1CCB7145006C5171 /* Alamofire.framework */,
+				AE5D828F1CCB7145006C5171 /* Freddy.framework */,
+				AE5D82901CCB7145006C5171 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -121,9 +135,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		AE5D826D1CCB6765006C5171 /* Bagheera */ = {
+		AE5D826D1CCB6765006C5171 /* Bagheera iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE5D82821CCB6765006C5171 /* Build configuration list for PBXNativeTarget "Bagheera" */;
+			buildConfigurationList = AE5D82821CCB6765006C5171 /* Build configuration list for PBXNativeTarget "Bagheera iOS" */;
 			buildPhases = (
 				AE5D82691CCB6765006C5171 /* Sources */,
 				AE5D826A1CCB6765006C5171 /* Frameworks */,
@@ -134,7 +148,7 @@
 			);
 			dependencies = (
 			);
-			name = Bagheera;
+			name = "Bagheera iOS";
 			productName = Bagheera;
 			productReference = AE5D826E1CCB6765006C5171 /* Bagheera.framework */;
 			productType = "com.apple.product-type.framework";
@@ -187,7 +201,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AE5D826D1CCB6765006C5171 /* Bagheera */,
+				AE5D826D1CCB6765006C5171 /* Bagheera iOS */,
 				AE5D82771CCB6765006C5171 /* BagheeraTests */,
 			);
 		};
@@ -215,9 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEB5B8741CCBBA7E00CD9550 /* Bagheera.swift in Sources */,
 				AE5D828D1CCB69BB006C5171 /* MovieList.swift in Sources */,
 				AE5D828C1CCB69BB006C5171 /* Movie.swift in Sources */,
-				AE5D828B1CCB69BB006C5171 /* BGHTMDbClient.swift in Sources */,
+				AEB5B8761CCBBBA000CD9550 /* BagheeraTraktTV.swift in Sources */,
+				AE5D828B1CCB69BB006C5171 /* BagheeraTMDb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +250,7 @@
 /* Begin PBXTargetDependency section */
 		AE5D827B1CCB6765006C5171 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AE5D826D1CCB6765006C5171 /* Bagheera */;
+			target = AE5D826D1CCB6765006C5171 /* Bagheera iOS */;
 			targetProxy = AE5D827A1CCB6765006C5171 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -345,10 +361,10 @@
 				);
 				INFOPLIST_FILE = Bagheera/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.metodowhite.Bagheera;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = 8;
+				PRODUCT_NAME = Bagheera;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -368,10 +384,10 @@
 				);
 				INFOPLIST_FILE = Bagheera/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.metodowhite.Bagheera;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = 8;
+				PRODUCT_NAME = Bagheera;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -408,7 +424,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE5D82821CCB6765006C5171 /* Build configuration list for PBXNativeTarget "Bagheera" */ = {
+		AE5D82821CCB6765006C5171 /* Build configuration list for PBXNativeTarget "Bagheera iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE5D82831CCB6765006C5171 /* Debug */,
