@@ -1,6 +1,6 @@
 //
-//  BagTMDbClient.swift
-//  Mowgli
+//  BagheeraTMDb.swift
+//  Bagheera
 //
 //  Created by Cristian Diaz on 12/03/16.
 //  Copyright © 2016 metodowhite. All rights reserved.
@@ -8,7 +8,6 @@
 //	Documentation: http://docs.themoviedb.apiary.io/#configuration
 //
 
-import Foundation
 import Alamofire
 import Freddy
 import RxSwift
@@ -16,7 +15,7 @@ import RxSwift
 private let TMDbAPIBaseURL = "https://api.themoviedb.org/3/"
 private let TMDbConfiguration = "configuration"
 
-public struct BGHTMDbClient {
+public struct BagheeraTMDb {
 	
 	private let APIKey: String
 	
