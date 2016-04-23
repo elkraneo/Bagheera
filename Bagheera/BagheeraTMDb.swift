@@ -44,4 +44,23 @@ public struct BagheeraTMDb {
 			return NopDisposable.instance
 		}
 	}
+	
+	public func fetchMovies(list: MovieListEndpoint, completion:(MovieList) -> ()) {
+		Alamofire.request(.GET, TMDbAPIBaseURL + list.rawValue, parameters: ["api_key": self.APIKey])
+			.responseJSON { response in
+				
+				guard let JSONData = response.data else { return }
+				
+				do {
+					let json = try JSON(data: JSONData)
+					let movieList = try MovieList(json: json)
+					
+					completion(movieList)
+				} catch {
+					//ERROR
+					return
+				}
+		}
+	}
+	
 }

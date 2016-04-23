@@ -13,9 +13,9 @@
 		AE5D828B1CCB69BB006C5171 /* BagheeraTMDb.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D82881CCB69BB006C5171 /* BagheeraTMDb.swift */; };
 		AE5D828C1CCB69BB006C5171 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D82891CCB69BB006C5171 /* Movie.swift */; };
 		AE5D828D1CCB69BB006C5171 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D828A1CCB69BB006C5171 /* MovieList.swift */; };
-		AE5D82911CCB7145006C5171 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D828E1CCB7145006C5171 /* Alamofire.framework */; };
-		AE5D82921CCB7145006C5171 /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D828F1CCB7145006C5171 /* Freddy.framework */; };
-		AE5D82931CCB7145006C5171 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D82901CCB7145006C5171 /* RxSwift.framework */; };
+		AE5D82911CCB7145006C5171 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D828E1CCB7145006C5171 /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		AE5D82921CCB7145006C5171 /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D828F1CCB7145006C5171 /* Freddy.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		AE5D82931CCB7145006C5171 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D82901CCB7145006C5171 /* RxSwift.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		AEB5B8741CCBBA7E00CD9550 /* Bagheera.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5B8731CCBBA7E00CD9550 /* Bagheera.swift */; };
 		AEB5B8761CCBBBA000CD9550 /* BagheeraTraktTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5B8751CCBBBA000CD9550 /* BagheeraTraktTV.swift */; };
 /* End PBXBuildFile section */
@@ -143,6 +143,7 @@
 				AE5D826A1CCB6765006C5171 /* Frameworks */,
 				AE5D826B1CCB6765006C5171 /* Headers */,
 				AE5D826C1CCB6765006C5171 /* Resources */,
+				AEB5B8A81CCBC3E000CD9550 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -223,6 +224,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AEB5B8A81CCBC3E000CD9550 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Bagheera.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Freddy.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE5D82691CCB6765006C5171 /* Sources */ = {

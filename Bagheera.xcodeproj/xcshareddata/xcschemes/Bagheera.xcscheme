@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AE5D826D1CCB6765006C5171"
-               BuildableName = "Bagheera iOS.framework"
+               BuildableName = "Bagheera.framework"
                BlueprintName = "Bagheera iOS"
                ReferencedContainer = "container:Bagheera.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AE5D826D1CCB6765006C5171"
-            BuildableName = "Bagheera iOS.framework"
+            BuildableName = "Bagheera.framework"
             BlueprintName = "Bagheera iOS"
             ReferencedContainer = "container:Bagheera.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AE5D826D1CCB6765006C5171"
-            BuildableName = "Bagheera iOS.framework"
+            BuildableName = "Bagheera.framework"
             BlueprintName = "Bagheera iOS"
             ReferencedContainer = "container:Bagheera.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AE5D826D1CCB6765006C5171"
-            BuildableName = "Bagheera iOS.framework"
+            BuildableName = "Bagheera.framework"
             BlueprintName = "Bagheera iOS"
             ReferencedContainer = "container:Bagheera.xcodeproj">
          </BuildableReference>
