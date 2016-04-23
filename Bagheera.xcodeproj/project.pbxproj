@@ -13,6 +13,9 @@
 		AE5D828B1CCB69BB006C5171 /* BGHTMDbClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D82881CCB69BB006C5171 /* BGHTMDbClient.swift */; };
 		AE5D828C1CCB69BB006C5171 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D82891CCB69BB006C5171 /* Movie.swift */; };
 		AE5D828D1CCB69BB006C5171 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D828A1CCB69BB006C5171 /* MovieList.swift */; };
+		AE5D82911CCB7145006C5171 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D828E1CCB7145006C5171 /* Alamofire.framework */; };
+		AE5D82921CCB7145006C5171 /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D828F1CCB7145006C5171 /* Freddy.framework */; };
+		AE5D82931CCB7145006C5171 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D82901CCB7145006C5171 /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 		AE5D82881CCB69BB006C5171 /* BGHTMDbClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGHTMDbClient.swift; sourceTree = "<group>"; };
 		AE5D82891CCB69BB006C5171 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		AE5D828A1CCB69BB006C5171 /* MovieList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
+		AE5D828E1CCB7145006C5171 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		AE5D828F1CCB7145006C5171 /* Freddy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Freddy.framework; path = Carthage/Build/iOS/Freddy.framework; sourceTree = "<group>"; };
+		AE5D82901CCB7145006C5171 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5D82911CCB7145006C5171 /* Alamofire.framework in Frameworks */,
+				AE5D82921CCB7145006C5171 /* Freddy.framework in Frameworks */,
+				AE5D82931CCB7145006C5171 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +68,9 @@
 		AE5D82641CCB6765006C5171 = {
 			isa = PBXGroup;
 			children = (
+				AE5D828E1CCB7145006C5171 /* Alamofire.framework */,
+				AE5D828F1CCB7145006C5171 /* Freddy.framework */,
+				AE5D82901CCB7145006C5171 /* RxSwift.framework */,
 				AE5D82701CCB6765006C5171 /* Bagheera */,
 				AE5D827C1CCB6765006C5171 /* BagheeraTests */,
 				AE5D826F1CCB6765006C5171 /* Products */,
@@ -327,6 +339,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Bagheera/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -345,6 +361,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Bagheera/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
