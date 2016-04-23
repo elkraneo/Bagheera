@@ -68,12 +68,12 @@
 		AE5D82641CCB6765006C5171 = {
 			isa = PBXGroup;
 			children = (
-				AE5D828E1CCB7145006C5171 /* Alamofire.framework */,
-				AE5D828F1CCB7145006C5171 /* Freddy.framework */,
-				AE5D82901CCB7145006C5171 /* RxSwift.framework */,
 				AE5D82701CCB6765006C5171 /* Bagheera */,
 				AE5D827C1CCB6765006C5171 /* BagheeraTests */,
 				AE5D826F1CCB6765006C5171 /* Products */,
+				AE5D828E1CCB7145006C5171 /* Alamofire.framework */,
+				AE5D828F1CCB7145006C5171 /* Freddy.framework */,
+				AE5D82901CCB7145006C5171 /* RxSwift.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -345,10 +345,10 @@
 				);
 				INFOPLIST_FILE = Bagheera/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.metodowhite.Bagheera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = 8;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -368,10 +368,10 @@
 				);
 				INFOPLIST_FILE = Bagheera/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.metodowhite.Bagheera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = 8;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
