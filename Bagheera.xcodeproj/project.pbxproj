@@ -348,6 +348,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.metodowhite.Bagheera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = 8;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -370,6 +371,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.metodowhite.Bagheera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = 8;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
