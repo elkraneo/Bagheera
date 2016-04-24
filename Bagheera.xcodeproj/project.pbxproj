@@ -18,6 +18,7 @@
 		AE5D82931CCB7145006C5171 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D82901CCB7145006C5171 /* RxSwift.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		AEB5B8741CCBBA7E00CD9550 /* Bagheera.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5B8731CCBBA7E00CD9550 /* Bagheera.swift */; };
 		AEB5B8761CCBBBA000CD9550 /* BagheeraTraktTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5B8751CCBBBA000CD9550 /* BagheeraTraktTV.swift */; };
+		AEB5B8AA1CCCB8DB00CD9550 /* BagheeraTMDb+RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5B8A91CCCB8DB00CD9550 /* BagheeraTMDb+RxSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		AE5D82901CCB7145006C5171 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		AEB5B8731CCBBA7E00CD9550 /* Bagheera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bagheera.swift; sourceTree = "<group>"; };
 		AEB5B8751CCBBBA000CD9550 /* BagheeraTraktTV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BagheeraTraktTV.swift; sourceTree = "<group>"; };
+		AEB5B8A91CCCB8DB00CD9550 /* BagheeraTMDb+RxSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BagheeraTMDb+RxSwift.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				AE5D82711CCB6765006C5171 /* Bagheera.h */,
 				AEB5B8731CCBBA7E00CD9550 /* Bagheera.swift */,
 				AE5D82881CCB69BB006C5171 /* BagheeraTMDb.swift */,
+				AEB5B8A91CCCB8DB00CD9550 /* BagheeraTMDb+RxSwift.swift */,
 				AEB5B8751CCBBBA000CD9550 /* BagheeraTraktTV.swift */,
 				AE5D82731CCB6765006C5171 /* Info.plist */,
 				AE5D82891CCB69BB006C5171 /* Movie.swift */,
@@ -255,6 +258,7 @@
 				AEB5B8741CCBBA7E00CD9550 /* Bagheera.swift in Sources */,
 				AE5D828D1CCB69BB006C5171 /* MovieList.swift in Sources */,
 				AE5D828C1CCB69BB006C5171 /* Movie.swift in Sources */,
+				AEB5B8AA1CCCB8DB00CD9550 /* BagheeraTMDb+RxSwift.swift in Sources */,
 				AEB5B8761CCBBBA000CD9550 /* BagheeraTraktTV.swift in Sources */,
 				AE5D828B1CCB69BB006C5171 /* BagheeraTMDb.swift in Sources */,
 			);

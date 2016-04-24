@@ -10,43 +10,21 @@
 
 import Alamofire
 import Freddy
-import RxSwift
 
-private let TMDbAPIBaseURL = "https://api.themoviedb.org/3/"
-private let TMDbConfiguration = "configuration"
 
 public struct BagheeraTMDb {
 	
-	private let APIKey: String
+	let TMDbAPIBaseURL = "https://api.themoviedb.org/3/"
+	let TMDbConfiguration = "configuration"
+	let TMDbAPIKey = "api_key"
+	let APIKey: String
 	
 	public init(APIKey key: String) {
 		self.APIKey = key
 	}
 	
-	public func fetchMovies(list: MovieListEndpoint) -> Observable<MovieList> {
-		return Observable.create { observer in
-			Alamofire.request(.GET, TMDbAPIBaseURL + list.rawValue, parameters: ["api_key": self.APIKey])
-				.responseJSON { response in
-					
-					guard let JSONData = response.data else { return }
-					
-					do {
-						let json = try JSON(data: JSONData)
-						let movieList = try MovieList(json: json)
-						
-						observer.onNext(movieList)
-						observer.onCompleted()
-					} catch {
-						observer.onError(MovieListError.NoData)
-						return
-					}
-			}
-			return NopDisposable.instance
-		}
-	}
-	
 	public func fetchMovies(list: MovieListEndpoint, completion:(MovieList) -> ()) {
-		Alamofire.request(.GET, TMDbAPIBaseURL + list.rawValue, parameters: ["api_key": self.APIKey])
+		Alamofire.request(.GET, TMDbAPIBaseURL + list.rawValue, parameters: [TMDbAPIKey: self.APIKey])
 			.responseJSON { response in
 				
 				guard let JSONData = response.data else { return }
@@ -57,7 +35,7 @@ public struct BagheeraTMDb {
 					
 					completion(movieList)
 				} catch {
-					//ERROR
+					//TODO: handle error
 					return
 				}
 		}
