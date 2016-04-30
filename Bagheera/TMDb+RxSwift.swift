@@ -10,11 +10,11 @@ import Alamofire
 import Freddy
 import RxSwift
 
-extension BagheeraTMDb {
+extension TMDb {
 	
-	public func fetchMovies(list: MovieListEndpoint) -> Observable<MovieList> {
+	public func fetchMovies(list: Endpoint) -> Observable<MovieList> {
 		return Observable.create { observer in
-			Alamofire.request(.GET, self.TMDbAPIBaseURL + list.rawValue, parameters: [self.TMDbAPIKey: self.APIKey])
+			Alamofire.request(.GET, self.APIBaseURL + list.rawValue, parameters: [TMDb.APIStringKey: self.APIKey])
 				.responseJSON { response in
 					
 					guard let JSONData = response.data else { return }

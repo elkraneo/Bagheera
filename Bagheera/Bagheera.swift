@@ -6,10 +6,12 @@
 //  Copyright © 2016 metodowhite. All rights reserved.
 //
 
-import Alamofire
-import Freddy
-import RxSwift
+public func setup(services: [Service]) {
+	for service in services {
+		print("📺: \(service)")
+	}
+}
 
-public struct Bagheera {
-	
+public func requestTMDb(endpoint: TMDb.Endpoint) {
+	print(endpoint)
 }

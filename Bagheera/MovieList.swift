@@ -8,13 +8,13 @@
 
 import Freddy
 
-public enum MovieListEndpoint: String {
-	case Latest = "movie/latest"
-	case Upcoming = "movie/upcoming"
-	case NowPlaying = "movie/now_playing"
-	case Popular = "movie/popular"
-	case TopRated = "movie/top_rated"
-}
+//public enum MovieListEndpoint: String {
+//	case Latest = "movie/latest"
+//	case Upcoming = "movie/upcoming"
+//	case NowPlaying = "movie/now_playing"
+//	case Popular = "movie/popular"
+//	case TopRated = "movie/top_rated"
+//}
 
 public enum MovieListError: ErrorType {
 	case NoResponse
