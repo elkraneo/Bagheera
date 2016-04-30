@@ -9,13 +9,12 @@
 import Foundation
 
 public protocol Service {
-	var enpoint: ServiceEndpoint { get }
+	static var enpoint: ServiceEndpoint.Type { get }
 	var serviceType: ServiceType { get }
 	var APIBaseURL: String { get }
 	var APIKey: String { get }
 	
 	init(APIKey key: String)
-	
 }
 
 public enum ServiceType {
@@ -23,5 +22,5 @@ public enum ServiceType {
 }
 
 public protocol ServiceEndpoint {
-	func service() -> ServiceType
+	 func description() -> ServiceType
 }

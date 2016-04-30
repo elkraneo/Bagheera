@@ -8,24 +8,23 @@
 //	Documentation: http://docs.themoviedb.apiary.io/#configuration
 //
 
-import Alamofire
-import Freddy
+enum TMDbEndpoint: String, ServiceEndpoint {
+	case Latest = "movie/latest"
+	case Upcoming = "movie/upcoming"
+	case NowPlaying = "movie/now_playing"
+	case Popular = "movie/popular"
+	case TopRated = "movie/top_rated"
+	
+	func description() -> ServiceType {
+		return .TMDb
+	}
+}
 
 public struct TMDb: Service {
 	
-	public enum Endpoint: String, ServiceEndpoint {
-		case Latest = "movie/latest"
-		case Upcoming = "movie/upcoming"
-		case NowPlaying = "movie/now_playing"
-		case Popular = "movie/popular"
-		case TopRated = "movie/top_rated"
-		
-		func service() -> ServiceType {
-			return .TMDb
-		}
-	}
-	
-	public let serviceType: ServiceType = .TMDb
+	public static let enpoint: ServiceEndpoint.Type = TMDbEndpoint.self
+
+	public let serviceType: ServiceType
 	public let APIBaseURL = "https://api.themoviedb.org/3/"
 	public let APIKey: String
 	
@@ -33,8 +32,10 @@ public struct TMDb: Service {
 	
 	
 	public init(APIKey key: String) {
+		self.serviceType =  .TMDb
 		self.APIKey = key
 	}
+
 	
 	
 	
@@ -63,23 +64,23 @@ public struct TMDb: Service {
 	
 	
 	
-	func fetchMovies(list: Endpoint, completion:(MovieList) -> ()) {
-		Alamofire.request(.GET, APIBaseURL + list.rawValue, parameters: [TMDb.APIStringKey: self.APIKey])
-			.responseJSON { response in
-				
-				guard let JSONData = response.data else { return }
-				
-				do {
-					let json = try JSON(data: JSONData)
-					let movieList = try MovieList(json: json)
-					
-					completion(movieList)
-				} catch {
-					//TODO: handle error
-					return
-				}
-		}
-	}
+//	func fetchMovies(list: Endpoint, completion:(MovieList) -> ()) {
+//		Alamofire.request(.GET, APIBaseURL + list.rawValue, parameters: [TMDb.APIStringKey: self.APIKey])
+//			.responseJSON { response in
+//				
+//				guard let JSONData = response.data else { return }
+//				
+//				do {
+//					let json = try JSON(data: JSONData)
+//					let movieList = try MovieList(json: json)
+//					
+//					completion(movieList)
+//				} catch {
+//					//TODO: handle error
+//					return
+//				}
+//		}
+//	}
 	
 }
 
