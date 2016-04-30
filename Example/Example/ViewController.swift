@@ -15,8 +15,7 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		
 		Bagheera.setup([TMDb(APIKey: "4552c3fa51f05ffc09b73912931a5406")])
-		Bagheera.requestTMDb(.Latest)
-		
+		Bagheera.request(TMDb.Endpoint.Latest)
 	}
 	
 }

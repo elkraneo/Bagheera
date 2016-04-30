@@ -13,12 +13,16 @@ import Freddy
 
 public struct TMDb: Service {
 	
-	public enum Endpoint: String {
+	public enum Endpoint: String, ServiceEndpoint {
 		case Latest = "movie/latest"
 		case Upcoming = "movie/upcoming"
 		case NowPlaying = "movie/now_playing"
 		case Popular = "movie/popular"
 		case TopRated = "movie/top_rated"
+		
+		func service() -> ServiceType {
+			return .TMDb
+		}
 	}
 	
 	public let serviceType: ServiceType = .TMDb
@@ -31,6 +35,22 @@ public struct TMDb: Service {
 	public init(APIKey key: String) {
 		self.APIKey = key
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

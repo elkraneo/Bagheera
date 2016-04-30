@@ -12,6 +12,6 @@ public func setup(services: [Service]) {
 	}
 }
 
-public func requestTMDb(endpoint: TMDb.Endpoint) {
-	print(endpoint)
+public func request(endpoint: ServiceEndpoint) {
+	print(endpoint, endpoint.service())
 }
