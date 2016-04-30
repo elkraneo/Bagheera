@@ -8,22 +8,22 @@
 //	Documentation: http://docs.themoviedb.apiary.io/#configuration
 //
 
-enum TMDbEndpoint: String, ServiceEndpoint {
-	case Latest = "movie/latest"
-	case Upcoming = "movie/upcoming"
-	case NowPlaying = "movie/now_playing"
-	case Popular = "movie/popular"
-	case TopRated = "movie/top_rated"
-	
-	func description() -> ServiceType {
-		return .TMDb
-	}
-}
+
 
 public struct TMDb: Service {
 	
-	public static let enpoint: ServiceEndpoint.Type = TMDbEndpoint.self
-
+	public enum Endpoint: String, ServiceEndpoint {
+		case Latest = "movie/latest"
+		case Upcoming = "movie/upcoming"
+		case NowPlaying = "movie/now_playing"
+		case Popular = "movie/popular"
+		case TopRated = "movie/top_rated"
+		
+		public func description() -> ServiceType {
+			return .TMDb
+		}
+	}
+	
 	public let serviceType: ServiceType
 	public let APIBaseURL = "https://api.themoviedb.org/3/"
 	public let APIKey: String

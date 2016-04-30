@@ -9,7 +9,6 @@
 import Foundation
 
 public protocol Service {
-	static var enpoint: ServiceEndpoint.Type { get }
 	var serviceType: ServiceType { get }
 	var APIBaseURL: String { get }
 	var APIKey: String { get }

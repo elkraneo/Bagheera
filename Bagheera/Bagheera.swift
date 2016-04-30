@@ -13,5 +13,5 @@ public func setup(services: [Service]) {
 }
 
 public func request(endpoint: ServiceEndpoint) {
-	print(endpoint, endpoint.description())
+	print("\(endpoint.description()): \(endpoint)")
 }
