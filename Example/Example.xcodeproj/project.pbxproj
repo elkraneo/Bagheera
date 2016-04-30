@@ -80,7 +80,7 @@
 		AEB5B8791CCBBFCA00CD9550 = {
 			isa = PBXGroup;
 			children = (
-				AEB5B8841CCBBFCA00CD9550 /* Example */,
+				AEB5B8841CCBBFCA00CD9550 /* Source */,
 				AEB5B8831CCBBFCA00CD9550 /* Products */,
 				AEB5B8971CCBBFF300CD9550 /* Bagheera.xcodeproj */,
 			);
@@ -94,16 +94,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AEB5B8841CCBBFCA00CD9550 /* Example */ = {
+		AEB5B8841CCBBFCA00CD9550 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				AEB5B8851CCBBFCA00CD9550 /* AppDelegate.swift */,
 				AEB5B8871CCBBFCA00CD9550 /* ViewController.swift */,
-				AEB5B8891CCBBFCA00CD9550 /* Main.storyboard */,
-				AEB5B88C1CCBBFCA00CD9550 /* Assets.xcassets */,
-				AEB5B88E1CCBBFCA00CD9550 /* LaunchScreen.storyboard */,
-				AEB5B8911CCBBFCA00CD9550 /* Info.plist */,
+				AEB5B8AF1CCD380A00CD9550 /* Supporting Files */,
 			);
+			name = Source;
 			path = Example;
 			sourceTree = "<group>";
 		};
@@ -114,6 +112,17 @@
 				AEB5B89F1CCBBFF300CD9550 /* BagheeraTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AEB5B8AF1CCD380A00CD9550 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEB5B8891CCBBFCA00CD9550 /* Main.storyboard */,
+				AEB5B88C1CCBBFCA00CD9550 /* Assets.xcassets */,
+				AEB5B88E1CCBBFCA00CD9550 /* LaunchScreen.storyboard */,
+				AEB5B8911CCBBFCA00CD9550 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

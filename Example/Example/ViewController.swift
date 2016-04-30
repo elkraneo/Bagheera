@@ -14,9 +14,9 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		BagheeraTMDb(APIKey: "4552c3fa51f05ffc09b73912931a5406").fetchMovies(.Upcoming	) { (movielist) in
-			print(movielist)
-		}
+		Bagheera.setup([TMDb(APIKey: "4552c3fa51f05ffc09b73912931a5406")])
+		Bagheera.requestTMDb(.Latest)
+		
 	}
-
+	
 }
