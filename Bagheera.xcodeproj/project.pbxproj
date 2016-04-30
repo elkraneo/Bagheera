@@ -10,15 +10,19 @@
 		AE5D82721CCB6765006C5171 /* Bagheera.h in Headers */ = {isa = PBXBuildFile; fileRef = AE5D82711CCB6765006C5171 /* Bagheera.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE5D82791CCB6765006C5171 /* Bagheera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D826E1CCB6765006C5171 /* Bagheera.framework */; };
 		AE5D827E1CCB6765006C5171 /* BagheeraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D827D1CCB6765006C5171 /* BagheeraTests.swift */; };
-		AE5D828B1CCB69BB006C5171 /* BagheeraTMDb.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D82881CCB69BB006C5171 /* BagheeraTMDb.swift */; };
+		AE5D828B1CCB69BB006C5171 /* TMDb.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D82881CCB69BB006C5171 /* TMDb.swift */; };
 		AE5D828C1CCB69BB006C5171 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D82891CCB69BB006C5171 /* Movie.swift */; };
 		AE5D828D1CCB69BB006C5171 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D828A1CCB69BB006C5171 /* MovieList.swift */; };
 		AE5D82911CCB7145006C5171 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D828E1CCB7145006C5171 /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		AE5D82921CCB7145006C5171 /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D828F1CCB7145006C5171 /* Freddy.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		AE5D82931CCB7145006C5171 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D82901CCB7145006C5171 /* RxSwift.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		AE7D6AE21CD4A7DF00D84E0C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7D6AE11CD4A7DF00D84E0C /* Service.swift */; };
+		AE7D6AE41CD4A8ED00D84E0C /* SimpleKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7D6AE31CD4A8ED00D84E0C /* SimpleKeychain.framework */; };
 		AEB5B8741CCBBA7E00CD9550 /* Bagheera.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5B8731CCBBA7E00CD9550 /* Bagheera.swift */; };
-		AEB5B8761CCBBBA000CD9550 /* BagheeraTraktTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5B8751CCBBBA000CD9550 /* BagheeraTraktTV.swift */; };
-		AEB5B8AA1CCCB8DB00CD9550 /* BagheeraTMDb+RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5B8A91CCCB8DB00CD9550 /* BagheeraTMDb+RxSwift.swift */; };
+		AEB5B8761CCBBBA000CD9550 /* TraktTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5B8751CCBBBA000CD9550 /* TraktTV.swift */; };
+		AEB5B8AA1CCCB8DB00CD9550 /* TMDb+RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5B8A91CCCB8DB00CD9550 /* TMDb+RxSwift.swift */; };
+		AEB5B8B11CCD38B700CD9550 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5B8B01CCD38B700CD9550 /* Manager.swift */; };
+		AEB5B8B31CCD405200CD9550 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5B8B21CCD405200CD9550 /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,15 +42,19 @@
 		AE5D82781CCB6765006C5171 /* BagheeraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BagheeraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5D827D1CCB6765006C5171 /* BagheeraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagheeraTests.swift; sourceTree = "<group>"; };
 		AE5D827F1CCB6765006C5171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE5D82881CCB69BB006C5171 /* BagheeraTMDb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BagheeraTMDb.swift; sourceTree = "<group>"; };
+		AE5D82881CCB69BB006C5171 /* TMDb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMDb.swift; sourceTree = "<group>"; };
 		AE5D82891CCB69BB006C5171 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		AE5D828A1CCB69BB006C5171 /* MovieList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 		AE5D828E1CCB7145006C5171 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		AE5D828F1CCB7145006C5171 /* Freddy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Freddy.framework; path = Carthage/Build/iOS/Freddy.framework; sourceTree = "<group>"; };
 		AE5D82901CCB7145006C5171 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		AE7D6AE11CD4A7DF00D84E0C /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		AE7D6AE31CD4A8ED00D84E0C /* SimpleKeychain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SimpleKeychain.framework; path = Carthage/Build/iOS/SimpleKeychain.framework; sourceTree = "<group>"; };
 		AEB5B8731CCBBA7E00CD9550 /* Bagheera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bagheera.swift; sourceTree = "<group>"; };
-		AEB5B8751CCBBBA000CD9550 /* BagheeraTraktTV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BagheeraTraktTV.swift; sourceTree = "<group>"; };
-		AEB5B8A91CCCB8DB00CD9550 /* BagheeraTMDb+RxSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BagheeraTMDb+RxSwift.swift"; sourceTree = "<group>"; };
+		AEB5B8751CCBBBA000CD9550 /* TraktTV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TraktTV.swift; sourceTree = "<group>"; };
+		AEB5B8A91CCCB8DB00CD9550 /* TMDb+RxSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TMDb+RxSwift.swift"; sourceTree = "<group>"; };
+		AEB5B8B01CCD38B700CD9550 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		AEB5B8B21CCD405200CD9550 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,7 @@
 				AE5D82911CCB7145006C5171 /* Alamofire.framework in Frameworks */,
 				AE5D82921CCB7145006C5171 /* Freddy.framework in Frameworks */,
 				AE5D82931CCB7145006C5171 /* RxSwift.framework in Frameworks */,
+				AE7D6AE41CD4A8ED00D84E0C /* SimpleKeychain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +83,7 @@
 		AE5D82641CCB6765006C5171 = {
 			isa = PBXGroup;
 			children = (
-				AE5D82701CCB6765006C5171 /* Bagheera */,
+				AE5D82701CCB6765006C5171 /* Source */,
 				AE5D827C1CCB6765006C5171 /* BagheeraTests */,
 				AE5D826F1CCB6765006C5171 /* Products */,
 				AEB5B8721CCBBA6400CD9550 /* Frameworks */,
@@ -90,18 +99,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AE5D82701CCB6765006C5171 /* Bagheera */ = {
+		AE5D82701CCB6765006C5171 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				AE5D82711CCB6765006C5171 /* Bagheera.h */,
 				AEB5B8731CCBBA7E00CD9550 /* Bagheera.swift */,
-				AE5D82881CCB69BB006C5171 /* BagheeraTMDb.swift */,
-				AEB5B8A91CCCB8DB00CD9550 /* BagheeraTMDb+RxSwift.swift */,
-				AEB5B8751CCBBBA000CD9550 /* BagheeraTraktTV.swift */,
-				AE5D82731CCB6765006C5171 /* Info.plist */,
-				AE5D82891CCB69BB006C5171 /* Movie.swift */,
-				AE5D828A1CCB69BB006C5171 /* MovieList.swift */,
+				AEB5B8AD1CCD37CE00CD9550 /* Core */,
+				AEB5B8AE1CCD37D900CD9550 /* Services */,
+				AEB5B8AC1CCD37BE00CD9550 /* Supporting Files */,
 			);
+			name = Source;
 			path = Bagheera;
 			sourceTree = "<group>";
 		};
@@ -117,11 +123,43 @@
 		AEB5B8721CCBBA6400CD9550 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE7D6AE31CD4A8ED00D84E0C /* SimpleKeychain.framework */,
 				AE5D828E1CCB7145006C5171 /* Alamofire.framework */,
 				AE5D828F1CCB7145006C5171 /* Freddy.framework */,
 				AE5D82901CCB7145006C5171 /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEB5B8AC1CCD37BE00CD9550 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE5D82711CCB6765006C5171 /* Bagheera.h */,
+				AE5D82731CCB6765006C5171 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AEB5B8AD1CCD37CE00CD9550 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AE5D82891CCB69BB006C5171 /* Movie.swift */,
+				AE5D828A1CCB69BB006C5171 /* MovieList.swift */,
+				AEB5B8B01CCD38B700CD9550 /* Manager.swift */,
+				AEB5B8B21CCD405200CD9550 /* Request.swift */,
+				AE7D6AE11CD4A7DF00D84E0C /* Service.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		AEB5B8AE1CCD37D900CD9550 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AE5D82881CCB69BB006C5171 /* TMDb.swift */,
+				AEB5B8A91CCCB8DB00CD9550 /* TMDb+RxSwift.swift */,
+				AEB5B8751CCBBBA000CD9550 /* TraktTV.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +274,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Bagheera.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SimpleKeychain.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Freddy.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
@@ -256,11 +294,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEB5B8741CCBBA7E00CD9550 /* Bagheera.swift in Sources */,
+				AEB5B8B31CCD405200CD9550 /* Request.swift in Sources */,
 				AE5D828D1CCB69BB006C5171 /* MovieList.swift in Sources */,
 				AE5D828C1CCB69BB006C5171 /* Movie.swift in Sources */,
-				AEB5B8AA1CCCB8DB00CD9550 /* BagheeraTMDb+RxSwift.swift in Sources */,
-				AEB5B8761CCBBBA000CD9550 /* BagheeraTraktTV.swift in Sources */,
-				AE5D828B1CCB69BB006C5171 /* BagheeraTMDb.swift in Sources */,
+				AEB5B8AA1CCCB8DB00CD9550 /* TMDb+RxSwift.swift in Sources */,
+				AE7D6AE21CD4A7DF00D84E0C /* Service.swift in Sources */,
+				AEB5B8B11CCD38B700CD9550 /* Manager.swift in Sources */,
+				AEB5B8761CCBBBA000CD9550 /* TraktTV.swift in Sources */,
+				AE5D828B1CCB69BB006C5171 /* TMDb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
