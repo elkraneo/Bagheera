@@ -14,4 +14,13 @@ public func setup(services: [Service]) {
 
 public func request(endpoint: ServiceEndpoint) {
 	print("\(endpoint.description()): \(endpoint)")
+	
+	switch endpoint.description() {
+	case .TMDb:
+		//TMDb.fetchMovies(endpoint)
+		break
+	case .TraktTV:
+		//TODO:
+		break
+	}
 }
