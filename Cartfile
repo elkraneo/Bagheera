@@ -1,4 +1,4 @@
 github "Alamofire/Alamofire" ~> 3.3
 github "bignerdranch/Freddy" ~> 2.0
-github "ReactiveX/RxSwift" ~> 2.0
-github "auth0/SimpleKeychain"
+github "ReactiveKit/ReactiveKit" ~> 2.0
+github "ReactiveKit/ReactiveUIKit" ~> 2.0

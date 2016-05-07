@@ -15,7 +15,6 @@
 		AE5D828D1CCB69BB006C5171 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5D828A1CCB69BB006C5171 /* MovieList.swift */; };
 		AE5D82911CCB7145006C5171 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D828E1CCB7145006C5171 /* Alamofire.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		AE5D82921CCB7145006C5171 /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D828F1CCB7145006C5171 /* Freddy.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		AE5D82931CCB7145006C5171 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5D82901CCB7145006C5171 /* RxSwift.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		AE7D6AE21CD4A7DF00D84E0C /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7D6AE11CD4A7DF00D84E0C /* Service.swift */; };
 		AE7D6AE41CD4A8ED00D84E0C /* SimpleKeychain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7D6AE31CD4A8ED00D84E0C /* SimpleKeychain.framework */; };
 		AEB5B8741CCBBA7E00CD9550 /* Bagheera.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5B8731CCBBA7E00CD9550 /* Bagheera.swift */; };
@@ -23,6 +22,8 @@
 		AEB5B8AA1CCCB8DB00CD9550 /* TMDb+RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5B8A91CCCB8DB00CD9550 /* TMDb+RxSwift.swift */; };
 		AEB5B8B11CCD38B700CD9550 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5B8B01CCD38B700CD9550 /* Manager.swift */; };
 		AEB5B8B31CCD405200CD9550 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB5B8B21CCD405200CD9550 /* Request.swift */; };
+		AEB844DF1CDDE38D000935F9 /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB844DD1CDDE38D000935F9 /* ReactiveKit.framework */; };
+		AEB844E01CDDE38D000935F9 /* ReactiveUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB844DE1CDDE38D000935F9 /* ReactiveUIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		AEB5B8A91CCCB8DB00CD9550 /* TMDb+RxSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TMDb+RxSwift.swift"; sourceTree = "<group>"; };
 		AEB5B8B01CCD38B700CD9550 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		AEB5B8B21CCD405200CD9550 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		AEB844DD1CDDE38D000935F9 /* ReactiveKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveKit.framework; path = Carthage/Build/iOS/ReactiveKit.framework; sourceTree = "<group>"; };
+		AEB844DE1CDDE38D000935F9 /* ReactiveUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveUIKit.framework; path = Carthage/Build/iOS/ReactiveUIKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +67,9 @@
 			files = (
 				AE5D82911CCB7145006C5171 /* Alamofire.framework in Frameworks */,
 				AE5D82921CCB7145006C5171 /* Freddy.framework in Frameworks */,
-				AE5D82931CCB7145006C5171 /* RxSwift.framework in Frameworks */,
 				AE7D6AE41CD4A8ED00D84E0C /* SimpleKeychain.framework in Frameworks */,
+				AEB844DF1CDDE38D000935F9 /* ReactiveKit.framework in Frameworks */,
+				AEB844E01CDDE38D000935F9 /* ReactiveUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +127,8 @@
 		AEB5B8721CCBBA6400CD9550 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AEB844DD1CDDE38D000935F9 /* ReactiveKit.framework */,
+				AEB844DE1CDDE38D000935F9 /* ReactiveUIKit.framework */,
 				AE7D6AE31CD4A8ED00D84E0C /* SimpleKeychain.framework */,
 				AE5D828E1CCB7145006C5171 /* Alamofire.framework */,
 				AE5D828F1CCB7145006C5171 /* Freddy.framework */,
@@ -276,8 +282,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SimpleKeychain.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Freddy.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveUIKit.framework",
 			);
 			name = Carthage;
 			outputPaths = (
